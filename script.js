@@ -16,21 +16,8 @@ btnAdicionar.addEventListener('click', () => {
         novaTarefa.textContent = texto;
         novaTarefa.className = 'list-group-item col-8'
 
-        const botaoExclusao = document.createElement('button');
-        botaoExclusao.innerText = 'Excluir';
-        botaoExclusao.classList = 'btn btn-danger ms-3 col-3';
-
-
-        botaoExclusao.addEventListener('click', () => {
-            botaoExclusao.parentElement.remove();
-            mensagem.innerText = 'Tarefa excluída com sucesso!';
-            mensagem.className = 'fw-bold text-warning';
-        })
-
-        novaTarefa.appendChild(botaoExclusao);
         unidade.appendChild(novaTarefa);
         listaTarefas.appendChild(unidade);
-
 
         inputTarefa.value = '';
 
