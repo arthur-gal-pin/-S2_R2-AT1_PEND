@@ -1,4 +1,4 @@
-let btnEditar = document.querySelector('#btnEditar');
+let btnAdicionar = document.querySelector('#btnEditar');
 let mensagem = document.querySelector('#mensagem');
  
 btnEditar.addEventListener('click', ()=>{
